@@ -6,30 +6,36 @@ In Java, you can use the PriorityQueue class to create both min-heaps and max-he
 Min-Heap
 Creating a min-heap is straightforward since PriorityQueue is implemented as a min-heap by default.
 
-import java.util.PriorityQueue;
+    import java.util.PriorityQueue;
 
-public class MinHeapExample {
+    public class MinHeapExample {
+   
     public static void main(String[] args) {
+        
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-
+       
         minHeap.add(10);
         minHeap.add(20);
         minHeap.add(15);
-
+        
         System.out.println("Min-Heap:");
         while (!minHeap.isEmpty()) {
             System.out.println(minHeap.poll());
         }
     }
 }
+
 Max-Heap
 To create a max-heap, you need to provide a custom comparator that reverses the natural ordering.
 
-import java.util.PriorityQueue;
-import java.util.Collections;
+    import java.util.PriorityQueue;
+    import java.util.Collections;
 
-public class MaxHeapExample {
-    public static void main(String[] args) {
+
+    public class MaxHeapExample {
+     
+     public static void main(String[] args) {
+        
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
 
         maxHeap.add(10);
