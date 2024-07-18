@@ -1,5 +1,6 @@
 # Heaps
 
+![WhatsApp Image 2024-07-18 at 23 42 15_17f33fac](https://github.com/user-attachments/assets/d2f961c7-8da3-47bc-a5b4-008beaa7fde6)
 
 In Java, you can use the PriorityQueue class to create both min-heaps and max-heaps. By default, PriorityQueue is a min-heap. To create a max-heap, you need to use a custom comparator. 
 
